@@ -1,0 +1,36 @@
+.btn {
+    background: #66AFE9;
+    color: #fff;
+    border: none;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    border-radius: 3px;
+    margin-top: 10px;
+    outline: none;
+}
+
+#bg {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    margin: 20px auto;
+}
+
+.msg {
+    margin-top: 10px;
+    width: 150px;
+    height: 30px;
+    border: none;
+    border: 1px solid firebrick;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.pClick {
+    cursor: pointer;
+}

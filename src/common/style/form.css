@@ -1,0 +1,44 @@
+/*最外层布局*/
+
+.container {
+    width: 800px;
+    height: 1500px;
+    border: 1px solid grey;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/*每个单独的提交表单*/
+
+.single-form {
+    width: 500px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid darkolivegreen;
+}
+
+
+/* 没有输入内容的框颜色为红色*/
+
+.red-border {
+    border: none;
+    border: 1px solid red;
+}
+
+
+/*提交按钮*/
+
+.commit {
+    position: absolute;
+    border: none;
+    border: 1 solid darkgreen;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 30px;
+    background: darkcyan;
+    color: #fff;
+    border-radius: 5px;
+    bottom: 5px;
+}

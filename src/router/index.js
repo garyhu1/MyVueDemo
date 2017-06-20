@@ -29,6 +29,11 @@ export default new Router({
             component: resolve => require(['@/components/formList'], resolve)
         },
         {
+        	path: '/cusEvent',
+        	name: 'cusEvent',
+        	component: resolve => require(['@/components/CusEvent'],resolve)
+        },
+        {
             path: '/',
             //  	path: '*',
             redirect: '/main'

@@ -2,7 +2,7 @@
 	<div>
 		<item :item="item"></item>
 		<button @click="$store.dispatch('updateData')" class="btn md-button">增加</button><br />
-		<button class="btn md-button">{{ item }}</button><br />
+		<button class="btn md-button" @click="goToCusEvent">{{ item }}</button><br />
 		<input :value='msg' @input='updateMsg' class="msg"/>
 		<p @click='toForm' class="pClick">{{ msg }}</p>
 		<button @click="changeBG" class="btn md-button">改变背景色</button><br />
@@ -71,6 +71,9 @@
 			},
 			toForm() {
 				this.$router.push('form');
+			},
+			goToCusEvent() {
+				this.$router.push('cusEvent');
 			}
 		},
 		mounted() {

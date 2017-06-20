@@ -41,6 +41,7 @@
 
 <script>
 	import CusButton from './CusButton';
+	import { Drag } from '../assets/js/drag';
 
 	export default {
 		data() {
@@ -55,6 +56,9 @@
 			setVal() {
 				this.total += 2;
 			}
+		},
+		mounted() {
+			Drag()
 		}
 	}
 </script>

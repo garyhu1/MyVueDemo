@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const getTodoList = params => {
-    return axios.get('./data/list.json', {
+    return axios.get('https://www.easy-mock.com/mock/592d882391470c0ac1feb75e/sposts/recommend', {
         params: params
     });
 }

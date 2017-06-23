@@ -34,3 +34,25 @@
 .pClick {
     cursor: pointer;
 }
+
+#con {
+	height: 60px;
+	background: cadetblue;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#player1 ,
+#player2 {
+	width: 60px;
+	height: 60px;
+}
+
+#vs {
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	line-height: 60px;
+	background: red;
+}

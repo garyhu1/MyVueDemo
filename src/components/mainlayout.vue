@@ -14,8 +14,13 @@
 		<div v-for='item in todos'>
 		    <p>
 			   <span>{{item.title}}</span>
-			   <span>{{item.count}}</span>
+			   <span>{{item.date}}</span>
 			</p>
+			<div id="con">
+				<img id="player1" :src="item.playerImg1" />
+			    <span id="vs">vs</span>
+			    <img id="player2" :src="item.playerImg2" />
+			</div>
 		</div>
 	</div>
 </template>
@@ -63,7 +68,7 @@
 			getTodo() {
 //				this.todos = [{title: "llal",count: 2},{title: "asd",count: 72}]
 				getTodoList({}).then(res => {
-					const TODOS = res.data.todos;
+					const TODOS = res.data.games;
 					this.todos = TODOS;
 				}).catch(error => {
 					alert(error);

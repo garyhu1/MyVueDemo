@@ -5,35 +5,7 @@
 		<p>{{ total }}</p>
 		<div class="item_container">
 			<div class="item_content">
-				<ul>
-					<li>
-						<div class="item"> <img src="http://www.jq22.com/img/cs/500x300-1.png" /> </div>
-					</li>
-					<li>
-						<div class="item"> <img src="http://www.jq22.com/img/cs/500x300-2.png" /> </div>
-					</li>
-					<li>
-						<div class="item"> <img src="http://www.jq22.com/img/cs/500x300-3.png" /> </div>
-					</li>
-					<li>
-						<div class="item"> <img src="http://www.jq22.com/img/cs/500x300-4.png" /> </div>
-					</li>
-					<li>
-						<div class="item"> <img src="http://www.jq22.com/img/cs/500x300-5.png" /> </div>
-					</li>
-					<li>
-						<div class="item"> <img src="http://www.jq22.com/img/cs/500x300-6.png" /> </div>
-					</li>
-					<li>
-						<div class="item"> <img src="http://www.jq22.com/img/cs/500x300-9.png" /> </div>
-					</li>
-					<li>
-						<div class="item"> <img src="http://www.jq22.com/img/cs/500x300-7.png" /> </div>
-					</li>
-					<li>
-						<div class="item"> <img src="http://www.jq22.com/img/cs/500x300-8.png" /> </div>
-					</li>
-				</ul>
+				<ul></ul>
 			</div>
 		</div>
 	</div>
@@ -41,12 +13,23 @@
 
 <script>
 	import CusButton from './CusButton';
-	import { Drag } from '../assets/js/drag';
+	import Drag from '../assets/js/drag';
 
 	export default {
 		data() {
 			return {
-				total: 0
+				total: 0,
+				images: [
+				    'http://www.jq22.com/img/cs/500x300-1.png',
+		            'http://www.jq22.com/img/cs/500x300-2.png',
+		            'http://www.jq22.com/img/cs/500x300-3.png',
+		            'http://www.jq22.com/img/cs/500x300-4.png',
+		            'http://www.jq22.com/img/cs/500x300-9.png',
+		            'http://www.jq22.com/img/cs/500x300-5.png',
+		            'http://www.jq22.com/img/cs/500x300-6.png',
+		            'http://www.jq22.com/img/cs/500x300-7.png',
+		            'http://www.jq22.com/img/cs/500x300-8.png'
+				]
 			}
 		},
 		components: {
@@ -58,14 +41,20 @@
 			}
 		},
 		mounted() {
-			Drag()
+			new Drag(jQuery(".item_content>ul"),this.images)
 		}
 	}
 </script>
 
 <style>
+	.item_container {
+		width: 900px;
+		margin: 10px auto;
+	}
+	
 	.item_content ul {
 		list-style: none;
+		position: relative;
 	}
 	
 	.item_content ul li {

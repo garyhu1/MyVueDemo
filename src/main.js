@@ -12,6 +12,11 @@ import jQuery from 'jquery';
 
 // import Mock from './mock';
 // Mock.start();
+import axios from 'axios';
+axios.default.timeout = 5000;
+
+//把axios放入到vue的原型链中，在任何界面都可以使用
+Vue.prototype.axios = axios;
 
 Vue.config.productionTip = false
 

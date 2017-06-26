@@ -10,7 +10,7 @@
 		<button class="btn md-button" @click="lookData">查看列表</button>
 		<ul class="l-list"></ul>
 		<br/>
-		<button class='btn' @click="getTodo">获取数据</button>
+		<button class='btn md-button' @click="getTodo">获取数据</button>
 		<div v-for='item in todos'>
 		    <p>
 			   <span>{{item.title}}</span>
@@ -22,6 +22,8 @@
 			    <img id="player2" :src="item.playerImg2" />
 			</div>
 		</div>
+		<br />
+		<button class="btn md-button" @click='goDouYuTV'>斗鱼TV</button>
 	</div>
 </template>
 
@@ -79,6 +81,9 @@
 			},
 			goToCusEvent() {
 				this.$router.push('cusEvent');
+			},
+			goDouYuTV() {
+				this.$router.push('douyu');
 			}
 		},
 		mounted() {

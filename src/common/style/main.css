@@ -1,3 +1,15 @@
+#main-layout {
+	position: relative;
+	font-family: Georgia, serif;
+}
+#main-content {
+	position: absolute;
+	top: 0;
+	left: -20vh;
+	background: darkkhaki;
+	height: 100%;
+	width: 20vh;
+}
 .btn {
     background: #66AFE9;
     color: #fff;
@@ -18,6 +30,7 @@
     line-height: 40px;
     font-size: 12px;
     margin: 20px auto;
+    color: #FFF;
 }
 
 .msg {
@@ -33,6 +46,9 @@
 
 .pClick {
     cursor: pointer;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 15px;
 }
 
 #con {
@@ -55,4 +71,13 @@
 	display: inline-block;
 	line-height: 60px;
 	background: red;
+}
+.new-list {
+	color: #fff;
+}
+#news-info{
+	margin-top: 20px;
+}
+#news-info span {
+	color: #fff;
 }

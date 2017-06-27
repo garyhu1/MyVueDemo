@@ -38,6 +38,11 @@ export default new Router({
         	component: resolve => require(['@/components/CusEvent'],resolve)
         },
         {
+        	path: '/bglayout',
+        	name: 'bglayout',
+        	component: resolve => require(['@/components/BGLayout'],resolve)
+        },
+        {
         	path: "/douyu",
         	name: 'douyu',
         	component: resolve => require(["@/components/pages/Main"],resolve),
@@ -46,6 +51,21 @@ export default new Router({
         	    	path: 'home',
         	    	name: 'home',
         	    	component: resolve => require(["@/components/pages/Home"],resolve)
+        	    },
+        	    {
+        	    	path: 'allcatogery',
+        	    	name: 'allcatogery',
+        	    	component: resolve => require(["@/components/pages/AllCatogery"],resolve)
+        	    },
+        	    {
+        	    	path: 'recommand',
+        	    	name: 'recommand',
+        	    	component: resolve => require(["@/components/pages/Recommand"],resolve)
+        	    },
+        	    {
+        	    	path: 'mine',
+        	    	name: 'mine',
+        	    	component: resolve => require(["@/components/pages/Mine"],resolve)
         	    }
         	]
         },

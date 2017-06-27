@@ -16,9 +16,15 @@
 	html,
 	template,
 	div,
+	ul,
 	p {
 		margin: 0;
 		padding: 0;
+	}
+	body,
+	html {
+		width: 100%;
+		height: 100%;
 	}
 	ul {
 		list-style: none;

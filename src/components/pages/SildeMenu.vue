@@ -2,7 +2,7 @@
 	<div class="slide-container">
 		<ul>
 		   <router-link tag="li" v-for="(l,index) in mainList" :to="l.uri" :key="index" class="cate-layout" @click.native="toggle(l.name)" replace>
-		   	   <span class="catogery-name">{{l.name}}</span>
+		   	   <span class="catogery-name">{{l.name}}</span>  
 		   	   <img src="../../assets/images/more.png" class="catogery-img"/>
 		   </router-link>
 		</ul>

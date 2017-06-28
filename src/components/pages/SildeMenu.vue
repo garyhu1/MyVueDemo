@@ -1,11 +1,14 @@
 <template>
-	<div class="slide-container">
-		<ul>
-		   <router-link tag="li" v-for="(l,index) in mainList" :to="l.uri" :key="index" class="cate-layout" @click.native="toggle(l.name)" replace>
-		   	   <span class="catogery-name">{{l.name}}</span>  
-		   	   <img src="../../assets/images/more.png" class="catogery-img"/>
-		   </router-link>
-		</ul>
+    <div id="slide-container">
+	   <div class="slide-bg"></div>
+	   <div class="slide-content">
+		   <ul>
+		      <router-link tag="li" v-for="(l,index) in mainList" :to="l.uri" :key="index" class="cate-layout" @click.native="toggle(l)" replace>
+		   	     <span class="catogery-name">{{l.name}}</span>  
+		   	     <img src="../../assets/images/more.png" class="catogery-img"/>
+		      </router-link>
+		  </ul>
+	   </div>
 	</div>
 </template>
 
@@ -30,10 +33,24 @@
 </script>
 
 <style>
-	.slide-container {
+    #slide-container {
+		width: 100%;
+		height: 95vh;
+		margin-top: 0;
+	}
+	.slide-bg {
+		width: 100%;
+		height: 95vh;
+		background: #CCC ;
+		opacity: 0.2;
+	}
+	.slide-content {
+		position: absolute;
+		left:0;
+		top:0;
 		width: 50%;
 		height: 95vh;
-		background: #000;
+		background: #111;
 		color: #fff;
 		margin-top: 0;
 	}

@@ -18,18 +18,26 @@
 	export default {
 		data() {
 			return {
-				show: false,
-				subTitle: '首页'
+				show: false
+			}
+		},
+		created() {
+			
+		},
+		computed: {
+            subTitle() {
+				return this.$store.state.title;
 			}
 		},
 		methods: {
 			showMenu(){
 				this.show = !this.show;
 			},
-			hideMenu(name) {
+			hideMenu(l) {
 				this.show = !this.show;
-				if(name){
-					this.subTitle = name;
+				if(l){
+					this.$store.commit('getTitle',l.name);
+					this.$store.commit('updateAddress',l.uri);
 				}
 			}
 		},
@@ -89,7 +97,6 @@
 	
 	.silde-menu {
 		position: absolute;
-		top: 5vh;
 		left: 0;
 		height: 95vh;
 	}

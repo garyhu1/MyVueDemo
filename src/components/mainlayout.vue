@@ -101,7 +101,7 @@
 				this.$router.push('cusEvent');
 			},
 			goDouYuTV() {
-				this.$router.push('douyu');
+				this.$router.push(this.$store.state.address);
 			},
 			showDraw() {
 				this.isShow = !this.isShow;
@@ -111,7 +111,7 @@
 					},400);
 				}else {
 					jQuery('#main-content').animate({
-						left: "-20vh"
+						left: "-30vh"
 					},400)
 				}
 			}

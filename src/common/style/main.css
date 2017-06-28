@@ -1,15 +1,17 @@
 #main-layout {
-	position: relative;
-	font-family: Georgia, serif;
+    position: relative;
+    font-family: Georgia, serif;
 }
+
 #main-content {
-	position: absolute;
-	top: 0;
-	left: -20vh;
-	background: darkkhaki;
-	height: 100%;
-	width: 20vh;
+    position: absolute;
+    top: 0;
+    left: -30vh;
+    background: #644605;
+    height: 100%;
+    width: 30vh;
 }
+
 .btn {
     background: #66AFE9;
     color: #fff;
@@ -52,32 +54,35 @@
 }
 
 #con {
-	height: 60px;
-	background: cadetblue;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+    height: 60px;
+    background: cadetblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-#player1 ,
+#player1,
 #player2 {
-	width: 60px;
-	height: 60px;
+    width: 60px;
+    height: 60px;
 }
 
 #vs {
-	width: 60px;
-	height: 60px;
-	display: inline-block;
-	line-height: 60px;
-	background: red;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    line-height: 60px;
+    background: red;
 }
+
 .new-list {
-	color: #fff;
+    color: #fff;
 }
-#news-info{
-	margin-top: 20px;
+
+#news-info {
+    margin-top: 20px;
 }
+
 #news-info span {
-	color: #fff;
+    color: #fff;
 }

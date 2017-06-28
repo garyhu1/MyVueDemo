@@ -21,6 +21,24 @@
 				show: false
 			}
 		},
+		beforeRouteEnter: (to, from, next) => {
+			// ...
+			let name;
+			if(to.path === '/douyu/home'){
+				name = "首页";
+			}else if(to.path === '/douyu/allcatogery'){
+				name = "全部分类";
+			}else if(to.path === '/douyu/recommand'){
+				name = "推荐";
+			}else {
+				name = "个人中心";
+			}
+			//无法访问this
+			// this.$store.commit('getTitle',name);
+			next(vm => {
+				vm.$store.commit('getTitle',name);
+			});
+		},
 		created() {
 			
 		},

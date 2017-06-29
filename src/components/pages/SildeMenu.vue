@@ -1,6 +1,6 @@
 <template>
     <div id="slide-container">
-	   <div class="slide-bg"></div>
+	   <div class="slide-bg" @click="hide"></div>
 	   <div class="slide-content">
 		   <ul>
 		      <router-link tag="li" v-for="(l,index) in mainList" :to="l.uri" :key="index" class="cate-layout" @click.native="toggle(l)" replace>
@@ -27,6 +27,9 @@
 		methods: {
 			toggle(name) {
 				this.$emit('toggleMenu',name);
+			},
+			hide() {
+				this.$emit('toggleMenu');
 			}
 		}
 	}
@@ -41,7 +44,7 @@
 	.slide-bg {
 		width: 100%;
 		height: 95vh;
-		background: #CCC ;
+		background: #111 ;
 		opacity: 0.2;
 	}
 	.slide-content {

@@ -5,7 +5,7 @@
 			<span>{{subTitle}}</span>
 			<p>斗鱼TV</p>
 		</div>
-	    <transition name='silde' class="silde-transition">
+		<transition name='silde' class="silde-transition">
 	    	<silde-menu v-show="show" class="silde-menu" @toggleMenu="hideMenu"></silde-menu>
 	    </transition>
 	    <router-view></router-view>
@@ -66,7 +66,7 @@
 </script>
 
 <!--加上scoped属性 css样式就变为私有的-->
-<style>
+<style scoped>
 	.my-main-page {
 		position: relative;
 	}
@@ -117,6 +117,7 @@
 		position: absolute;
 		left: 0;
 		height: 95vh;
+		z-index: 999;
 	}
 	
 	.silde-enter-active,

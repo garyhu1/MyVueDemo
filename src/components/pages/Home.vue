@@ -1,7 +1,12 @@
 <template>
 	<div>
-	   <h1>首页</h1>
-	   <button @click="getInfo">Button</button>
+	   <div v-for="item in artList">
+	      <p>{{ item.title }}</p>
+		  <p>{{ item.desc }}</p>
+		  <div v-for="img in item.imgArr">
+		     <img :src="img"/>
+		  </div>
+	   </div>
 	</div>
 </template>
 
@@ -17,7 +22,7 @@
 //			alert("garyhu");
             next()
 		},
-		created(){
+		mounted(){
 			  getArticle({}).then(res => {
 					  this.artList = res.data.articles;
 				}).catch(err => {

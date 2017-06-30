@@ -21,3 +21,9 @@ export const getArticle = params => {
         params
     });
 }
+
+export const getAllCatogery = params => {
+    return axios.get("https://www.easy-mock.com/mock/592d882391470c0ac1feb75e/sposts/swiper", {
+        params
+    });
+}

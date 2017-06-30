@@ -10,7 +10,7 @@ export default new Router({
             path: '/main',
             name: 'hello',
             //    alias: "/",
-//          component: resolve => require(['@/components/mainlayout'], resolve)
+            //          component: resolve => require(['@/components/mainlayout'], resolve)
             component: mainLayout
         },
         {
@@ -33,41 +33,46 @@ export default new Router({
         },
         //该页面中包含了拖拽的效果
         {
-        	path: '/cusEvent',
-        	name: 'cusEvent',
-        	component: resolve => require(['@/components/CusEvent'],resolve)
+            path: '/cusEvent',
+            name: 'cusEvent',
+            component: resolve => require(['@/components/CusEvent'], resolve)
+        },
+        //vue-bootstrap的插件练习使用
+        {
+            path: '/bootstrap',
+            name: 'bootstrap',
+            component: resolve => require(['@/components/VueBootStrap'], resolve)
         },
         {
-        	path: '/bglayout',
-        	name: 'bglayout',
-        	component: resolve => require(['@/components/BGLayout'],resolve)
+            path: '/bglayout',
+            name: 'bglayout',
+            component: resolve => require(['@/components/BGLayout'], resolve)
         },
         {
-        	path: "/douyu",
-        	name: 'douyu',
-        	component: resolve => require(["@/components/pages/Main"],resolve),
-        	children: [
-        	    {
-        	    	path: 'home',
-        	    	name: 'home',
-        	    	component: resolve => require(["@/components/pages/Home"],resolve)
-        	    },
-        	    {
-        	    	path: 'allcatogery',
-        	    	name: 'allcatogery',
-        	    	component: resolve => require(["@/components/pages/AllCatogery"],resolve)
-        	    },
-        	    {
-        	    	path: 'recommand',
-        	    	name: 'recommand',
-        	    	component: resolve => require(["@/components/pages/Recommand"],resolve)
-        	    },
-        	    {
-        	    	path: 'mine',
-        	    	name: 'mine',
-        	    	component: resolve => require(["@/components/pages/Mine"],resolve)
-        	    }
-        	]
+            path: "/douyu",
+            name: 'douyu',
+            component: resolve => require(["@/components/pages/Main"], resolve),
+            children: [{
+                    path: 'home',
+                    name: 'home',
+                    component: resolve => require(["@/components/pages/Home"], resolve)
+                },
+                {
+                    path: 'allcatogery',
+                    name: 'allcatogery',
+                    component: resolve => require(["@/components/pages/AllCatogery"], resolve)
+                },
+                {
+                    path: 'recommand',
+                    name: 'recommand',
+                    component: resolve => require(["@/components/pages/Recommand"], resolve)
+                },
+                {
+                    path: 'mine',
+                    name: 'mine',
+                    component: resolve => require(["@/components/pages/Mine"], resolve)
+                }
+            ]
         },
         {
             path: '/',

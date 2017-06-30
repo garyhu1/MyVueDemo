@@ -1,42 +1,23 @@
 {
-    "articles": [{
-            "url": "article/1",
-            "title": "杨毅：攻防两端詹皇消耗大 加强防守骑士仍有戏",
-            "desc": "勒布朗-詹姆斯再次输掉了他的总决赛第一战。往好的地方想，在他赢下的三个总冠军里，每一个开局都是这样的。91比113，22分差距。终场哨响，骑士队鱼贯向着更衣室...",
-            "imgArr": [
-                "http://xurenjie.cn:3000/img/community/article2.png",
-                "http://xurenjie.cn:3000/img/community/article3.png",
-                "http://xurenjie.cn:3000/img/community/article4.png"
-            ],
-            "author": "Jordan",
-            "posi": "骑士"
+    "swiper": [{
+            "desc": "哈登独家专访，一个平凡的伟大",
+            "img": "http://xurenjie.cn:3000/img/community/swiper1.jpeg"
         },
         {
-            "url": "article/2",
-            "title": "前方解读：骑士惨败因杜少 詹皇赛后郁闷刷手机",
-            "desc": "腾讯体育6月2日奥克兰讯（沈洋、鲍仁君、王丽媛）总决赛第一场，骑士91-113输给勇士，系列赛总比分勇士1-0领先。在比赛结束后​，腾讯的前方天团王丽媛、沈...",
-            "imgArr": ["http://xurenjie.cn:3000/img/community/article6.jpg"],
-            "author": "Jordan",
-            "posi": "骑士"
+            "desc": "库里和詹姆斯的3年恩怨",
+            "img": "http://xurenjie.cn:3000/img/community/swiper2.jpeg"
         },
         {
-            "url": "article/3",
-            "title": "骑士替补老将是防守杜兰特的秘密武器2？",
-            "desc": "nba卫冕冠军克利夫兰骑士本赛季常规赛的防守效率排名联盟倒数第九位，到了季后赛，立马升至...",
-            "imgArr": [
-                "http://xurenjie.cn:3000/img/community/article1.jpg",
-                "http://xurenjie.cn:3000/img/community/article2.png"
-            ],
-            "author": "Jordan",
-            "posi": "骑士"
+            "desc": "詹姆斯再夺一冠超科比？已经超科比？",
+            "img": "http://xurenjie.cn:3000/img/community/swiper3.png"
         },
         {
-            "url": "article/4",
-            "title": "曝科尔或在总决赛G2中回归 消息源：他好多了",
-            "desc": "腾讯体育6月2日讯（文/RamonaShelburne和ChrisHaynes，ESPN撰稿人）据ESPN报道，受到背部伤病困扰的勇士主教练史蒂夫-科尔，可能在总决赛第二场比赛中回归。今年...",
-            "imgArr": ["http://xurenjie.cn:3000/img/community/acticle5.jpg"],
-            "author": "Jordan",
-            "posi": "骑士"
+            "desc": "詹姆斯上演逆境英雄，回顾三年",
+            "img": "http://xurenjie.cn:3000/img/community/swiper4.png"
+        },
+        {
+            "desc": "小托马斯地表最强175震撼的一年",
+            "img": "http://xurenjie.cn:3000/img/community/swiper5.jpeg"
         }
     ]
 }

@@ -12,7 +12,7 @@
 			<button class="btn md-button" @click="lookData">查看列表</button>
 			<ul class="l-list"></ul>
 			<br/>
-			<button class='btn md-button' @click="getTodo">获取数据</button>
+			<button class='btn md-button' @click="getTodo">vue-bootstrap</button>
 			<div v-for='item in todos'>
 				<p id="news-info">
 					<span>{{item.title}}</span>
@@ -86,13 +86,7 @@
 				this.$router.push('list');
 			},
 			getTodo() {
-				//				this.todos = [{title: "llal",count: 2},{title: "asd",count: 72}]
-				getTodoList({}).then(res => {
-					const TODOS = res.data.games;
-					this.todos = TODOS;
-				}).catch(error => {
-					alert(error);
-				});
+				this.$router.push('bootstrap');
 			},
 			toForm() {
 				this.$router.push('form');

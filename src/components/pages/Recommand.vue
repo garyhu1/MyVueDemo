@@ -38,7 +38,7 @@
 				games: []
 			}
 		},
-		created() {
+		mounted() {
 			getRecommand({}).then(response => {
 				this.bannerList = response.data.newArr[0];
 				this.games = response.data.games;

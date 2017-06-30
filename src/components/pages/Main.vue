@@ -8,7 +8,7 @@
 		<transition name='silde' class="silde-transition">
 	    	<silde-menu v-show="show" class="silde-menu" @toggleMenu="hideMenu"></silde-menu>
 	    </transition>
-	    <router-view></router-view>
+	    <router-view class="main-content"></router-view>
 	</div>
 </template>
 
@@ -50,12 +50,21 @@
 		methods: {
 			showMenu(){
 				this.show = !this.show;
+				this.hideScroll(this.show);
 			},
 			hideMenu(l) {
 				this.show = !this.show;
+				this.hideScroll(this.show);
 				if(l){
 					this.$store.commit('getTitle',l.name);
 					this.$store.commit('updateAddress',l.uri);
+				}
+			},
+			hideScroll(show) {
+				if(show){
+					jQuery('body').css('overflow','hidden');
+				}else {
+					jQuery('body').css('overflow','auto');
 				}
 			}
 		},
@@ -71,7 +80,8 @@
 		position: relative;
 	}
 	.douyu-title {
-		position: relative;
+		position: fixed;
+		top: 0;
 		width: 100%;
 		height: 5vh;
 		background: darkmagenta;
@@ -79,6 +89,7 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
+		z-index: 10000;
 	}
 	
 	
@@ -114,10 +125,15 @@
 	}
 	
 	.silde-menu {
-		position: absolute;
+		position: fixed;
 		left: 0;
+		top: 5vh;
 		height: 95vh;
 		z-index: 999;
+	}
+
+	.main-content {
+		margin-top: 5vh;
 	}
 	
 	.silde-enter-active,

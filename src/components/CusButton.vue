@@ -6,11 +6,15 @@
 </template>
 
 <script>
+    import { alert,buttonGroup } from 'vue-strap';
 	export default {
 		data() {
 			return {
 				count : 0
 			}
+		},
+		components: {
+			
 		},
 		methods: {
 			myValue() {
